@@ -1,0 +1,557 @@
+@import url(https://db.onlinewebfonts.com/c/42c3607f840e222a23d6da4efe15a2e8?family=Quarto-Black);
+@font-face {
+  font-family: "quarto";
+  src: url("https://db.onlinewebfonts.com/c/42c3607f840e222a23d6da4efe15a2e8?family=Quarto-Black")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "eina";
+  src: url("./Eina/Eina01-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  font-family: "eina", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+/*  set background for screen */
+body {
+  background-color: #c5d9ee;
+  font-family: "Quarto-Black", sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  background-color: white;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+header .logo {
+  margin-left: 60px;
+  font-size: 24px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #000;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+header nav ul li a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+.about-section {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  min-height: 500px;
+  overflow: hidden;
+  object-fit: contain;
+}
+.about-section .about-text {
+  font-size: 40px;
+}
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.element-about {
+  padding: 2% 5% 2% 5%;
+}
+.element-about-content {
+  max-width: 1400px;
+  padding: 10px;
+}
+.element-about-content-main {
+  text-align: center;
+}
+.element-about-content-main h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.element-about-content-main p {
+  padding-bottom: 20px;
+  line-height: 1.5;
+}
+
+.offer-section {
+  padding: 50px 20px;
+  background: url("m.jpg") no-repeat center center/cover;
+  text-align: center;
+}
+
+.offer h2 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.offer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.offer-box {
+  background-color: rgba(237, 249, 254, 0.6);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offer-box img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.offer-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.offer-box p {
+  font-size: 16px;
+  color: #666;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .offer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .offer-box {
+    width: 80%;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide.main {
+  flex-direction: column;
+  gap: 20px;
+  height: 200px;
+}
+.swiper-slide.main p {
+  font-size: 1.3em;
+  font-style: italic;
+  line-height: 1.5;
+}
+.swiper-slide.main .img-review {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.main .content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+.main .content .details {
+  display: flex;
+  float: right;
+  flex-direction: column;
+  align-items: start;
+}
+
+.about-us {
+  position: relative;
+  padding: 0px 80px;
+  background: url("phuquoc.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  min-height: 400px;
+}
+.about-us .left {
+  width: 50%;
+}
+.about-us .content,
+.about-us .avatar-carousel {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-us .content {
+  color: #fff;
+}
+
+.about-us .type-about {
+  font-size: 20px;
+  color: #ddd;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.about-us h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.about-us p {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.about-us button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.about-us button:hover {
+  background-color: #0056b3;
+}
+
+.avatar-carousel {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 50%;
+  float: left;
+  height: 400px;
+}
+.avatar-carousel .avt {
+  margin: 100px;
+  border-radius: 10px;
+  background: white;
+}
+.avatar-carousel .swiper {
+  text-align: center;
+  z-index: 1;
+}
+.avatar-carousel .swiper-slide {
+  padding: 30px;
+  border-bottom: 3px solid #000;
+}
+.avatar-carousel .ab {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.avatar-carousel .img-about {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.avatar-carousel h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.avatar-carousel p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-us {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-us .left {
+    width: 100%;
+  }
+  .about-us .avatar-carousel {
+    width: 100%;
+    position: relative;
+    align-items: center;
+  }
+  .about-us .avatar-carousel .avt {
+    margin: 2px;
+  }
+  .about-us .content,
+  .about-us .avatar-carousel {
+    padding: 10px;
+  }
+
+  .avatar-carousel {
+    flex-direction: column;
+  }
+
+  .avatar-carousel div {
+    width: 80%;
+  }
+}
+
+.we-section {
+  margin-top: 150px;
+  text-align: center;
+}
+.we-section h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.we-section p {
+  margin-bottom: 30px;
+}
+
+.we-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.we-box {
+  box-shadow: 0 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: 15px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+}
+.we-box.bg-1 {
+  background: url("img1.jpg") no-repeat center center/cover;
+}
+.we-box.bg-2 {
+  background: url("img2.jpg") no-repeat center center/cover;
+}
+.we-box.bg-3 {
+  background: url("img3.jpg") no-repeat center center/cover;
+}
+.we-box.bg-4 {
+  background: url("img4.jpg") no-repeat center center/cover;
+}
+.we-box.bg-5 {
+  background: url("img5.jpg") no-repeat center center/cover;
+}
+
+.we-box img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.we-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.we-box p {
+  font-size: 16px;
+  color: #fff;
+}
+.contact {
+  margin-top: 50px;
+  background: url("https://www.crystal-travel.com/wp-content/uploads/2023/01/footer-signup-bg.jpg")
+    no-repeat center center/cover;
+  padding: 9% 5% 10% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.form-contact {
+  display: flex;
+  gap: 30px;
+}
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+.contact-form {
+  text-align: center;
+}
+.contact-form h2 {
+  font-family: "eina", Arial, sans-serif;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.contact-form p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.input-group input {
+  padding: 10px;
+}
+.btn-signup {
+  padding: 10px;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .form-contact {
+    flex-direction: column;
+  }
+  .input-group {
+    flex-direction: column;
+  }
+  .input-group input {
+    width: 100%;
+  }
+  .btn-signup {
+    width: 100%;
+  }
+}
+.must-section {
+  padding: 2% 5% 2% 5%;
+}
+.must-section h3 {
+  font-size: 40px;
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+.must-section .swiper-slide {
+  margin-bottom: 40px;
+  border-radius: 20px;
+}
+.must-section .md {
+  border-radius: 20px;
+  position: relative;
+}
+.must-section .md img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.must-section .md .content {
+  position: absolute;
+  /* center */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+}
+.your-say .page-main {
+  padding: 0 40px;
+}
+.your-say .page-main .content {
+ 
+ 
+  padding: 10rem 4rem 5rem 3rem;
+}
+.your-say .page-main .content:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 665px;
+  max-height: 100%;
+  position: absolute;
+}
+
+.your-say .page-main .content h2 {
+  font-size: 40px;
+  margin-bottom: 3.5rem;
+  line-height: 1;
+}
+
+.content-entry {
+  font-size: 1.5rem;
+  line-height: 1.6;
+ 
+}
+
+.content-entry p {
+  line-height: 1.6;
+ 
+}
+
+.content-entry img.alignright {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  float: right;
+}
+@media (max-width: 767px) {
+  .content-entry img.alignright,
+  .content-entry img.alignleft {
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .your-say .page-main .content h2 {
+    font-size: 2.2rem;
+     
+  }
+}

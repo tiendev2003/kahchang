@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .container{
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background-image: url("https://www.crystal-travel.com/wp-content/uploads/2023/01/iceland-banner.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content{
+            position: relative;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+        .image{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+            position: relative;
+            top: -75px;
+        }
+        .image img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .name{
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .title{
+            font-size: 14px;
+            margin-top: 5px;
+            color: #444;
+        }
+        .team{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .heading{
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .text{
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .button{
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .dots{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .dot{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin: 0 5px;
+        }
+        .dot.active{
+            background-color: #007bff;
+        }
+        .who{
+            text-align: center;
+            margin-top: 50px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="team">MEET THE FAMILY</div>
+            <div class="heading">There are some things you can't travel without.</div>
+            <div class="text">Our team's expertise is one of them.</div>
+            <a href="#" class="button">Meet the Whole Team</a>
+        </div>
+        <div class="content">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1500648767791-004cc1ef80f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="profile">
+            </div>
+            <div class="name">Joe Donnellan</div>
+            <div class="title">Director of Leisure Travel</div>
+            <div class="title">King Beyond the Wall</div>
+            <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+    <div class="who">Who Are We?</div>
+</body>
+</html>
